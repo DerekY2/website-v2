@@ -4,22 +4,25 @@ import navIcon from '../assets/Sparkle_Doll.png'
 
 function Navbar(){
   return (
-    <nav className="navbar">
-      <img src={navIcon} alt="Sparkle Doll" className='nav-icon' />
-      <div className="nav-menu">
-        <ul className="nav-list">
-          <li className="nav-link">Home</li>
-          <li className="nav-link">Work</li>
-          <li className="nav-link">About</li>
-          <li className="nav-link">Contact</li>
-        </ul>
-      </div>
-      <button className="nav-btn">
-        <img src="" alt="" className="nav-btn-img" />Contact Me
-      </button> 
-    </nav>
+    <header className='header'>
+      <nav className="navbar">
+        <div href="" className="nav-icon">
+          <img src={navIcon} alt="Sparkle Doll"/>
+        </div>
+        <div className="nav-menu">
+          <div className="nav-list">
+            <div className="nav-item">Home</div>
+            <div className="nav-item">Work</div>
+            <div className="nav-item">About</div>
+            <div className="nav-item">Contact</div>
+          </div>
+        </div>
+        <button className="nav-btn">
+          <img src="" alt="" className="nav-btn-img" />Contact Me
+        </button> 
+      </nav>
+    </header>
   )
 }
 
 export default Navbar
-
